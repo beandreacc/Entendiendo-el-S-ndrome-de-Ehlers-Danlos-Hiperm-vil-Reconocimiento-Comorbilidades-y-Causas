@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0f7fa; /* Fondo color turquesa claro */
@@ -7,11 +7,11 @@ body {
 }
 
 header {
-    background-color: #004d40; /* Color turquesa oscuro */
-    color: #fff;
+    background-color: #b2dfdb; /* Fondo del título más claro */
+    color: #004d40; /* Color del título más oscuro */
     padding: 20px 0;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 41px;
     font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 41px; /* Tamaño del título */
 }
 
 h2 {
@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em; /* Tamaño de fuente más pequeño y normal para el cuerpo del texto */
     line-height: 1.6;
 }
 
@@ -56,6 +56,10 @@ ul {
     height: auto;
 }
 
+.large-image {
+    width: 80%; /* Agrandar la primera imagen */
+}
+
 footer {
     background-color: #004d40; /* Color turquesa oscuro */
     color: #fff;
@@ -65,3 +69,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
