@@ -28,6 +28,7 @@
         <section id="intro">
             <h2>¿Qué es el Síndrome de Ehlers-Danlos Hipermóvil? ¿Por qué es una problemática?</h2>
             <p>El Síndrome de Ehlers-Danlos Hipermóvil (SEDh) es una de las múltiples variantes del Síndrome de Ehlers-Danlos, un grupo de trastornos hereditarios del tejido conectivo. Se caracteriza principalmente por la hipermovilidad de las articulaciones, la elasticidad de la piel y la fragilidad de los tejidos.</p>
+            <img src="imagen-introduccion.jpg" alt="Imagen representativa del SEDh" class="large-image">
         </section>
 
         <section id="hiperlaxitud">
@@ -133,6 +134,7 @@
                 <li>Dolor Crónico</li>
                 <li>Fatiga Crónica</li>
             </ul>
+            <img src="imagen-comorbidas.jpg" alt="Imagen representativa de enfermedades comórbidas" class="large-image">
         </section>
 
         <section id="acciones">
@@ -150,15 +152,16 @@
     </footer>
 
     <script src="script.js"></script>
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+            const target = document.querySelector(this.getAttribute('href'));
+            target.style.display = 'block';
+        });
+    });
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
