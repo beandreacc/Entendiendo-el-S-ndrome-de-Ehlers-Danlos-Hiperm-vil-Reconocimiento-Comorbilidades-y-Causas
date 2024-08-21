@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -15,58 +16,10 @@ header {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-}
+/* Navigation Styles */
+nav ul 
+    display: flex;
+    justify-content: center
+    
 
-section {
-    margin-bottom: 20px;
-}
-
-h1, h2, h3 {
-    font-weight: bold;
-    color: #00695c; /* Color turquesa oscuro */
-}
-
-h1 {
-    font-size: 41px; /* Tamaño del título */
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-p {
-    font-size: 1em; /* Tamaño de fuente más pequeño y normal para el cuerpo del texto */
-    line-height: 1.6;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.image-space {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-}
-
-.large-image {
-    width: 80%; /* Agrandar la primera imagen */
-}
-
-footer {
-    background-color: #004d40; /* Color turquesa oscuro */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
