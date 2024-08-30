@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entendiendo el Síndrome de Ehlers-Danlos Hipermóvil</title>
+    <link rel="icon" href="logohiperlaxo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Entendiendo el Síndrome de Ehlers-Danlos Hipermóvil</h1>
+        <div class="logo-container">
+            <img src="logohiperlaxo.png" alt="Logo de mi sitio">
+        </div>
     </header>
     
     <nav>
@@ -27,23 +29,15 @@
     <main>
         <section id="intro">
             <h2>¿Qué es el Síndrome de Ehlers-Danlos Hipermóvil? ¿Por qué es una problemática?</h2>
-            <p>El Síndrome de Ehlers-Danlos Hipermóvil (SEDh) es una de las múltiples variantes del Síndrome de Ehlers-Danlos, un grupo de trastornos hereditarios del tejido conectivo. Se caracteriza principalmente por la hipermovilidad de las articulaciones, la elasticidad de la piel y la fragilidad de los tejidos.</p>
-            <img src="imagen-introduccion.jpg" alt="Imagen representativa del SEDh" class="large-image">
+            <p>El Síndrome de Ehlers-Danlos Hipermóvil (SEDh) es una de las múltiples variantes del Síndrome de Ehlers-Danlos, un grupo de trastornos hereditarios del tejido conectivo.</p>
+            <img src="hiper1.png" alt="Imagen representativa del SEDh" class="large-image">
         </section>
-
-        <section id="hiperlaxitud">
+        <section id="hiperlaxitud" class="hidden">
             <h2>¿Es necesario cumplir con todos los puntos de hiperlaxitud?</h2>
-            <p>No es necesario cumplir con todos los criterios de hiperlaxitud extrema, como la capacidad de doblar los dedos de manera inusual o tocar las palmas de las manos en el suelo sin doblar las rodillas, para ser considerado hiperlaxo o tener el síndrome de Ehlers-Danlos hipermóvil (SEDh).</p>
-            <p>La hiperlaxitud y el SEDh son condiciones que pueden variar significativamente entre las personas. Aquí hay algunos puntos clave para entender mejor:</p>
-            <h3>Hiperlaxitud</h3>
-            <ul>
-                <li>Escala de Beighton: Una herramienta común para evaluar la hiperlaxitud articular.</li>
-                <li>Puntaje de Beighton: Un puntaje de 4 o más indica hiperlaxitud.</li>
-                <li>Variabilidad: Algunas personas pueden tener hiperlaxitud solo en ciertas articulaciones y no en otras.</li>
-            </ul>
+            <p>No es necesario cumplir con todos los criterios de hiperlaxitud extrema.</p>
+            <img src="hiper3.jpg" alt="Imagen de la hiperlaxitud" class="large-image">
         </section>
-
-        <section id="sedh">
+        <section id="sedh" class="hidden">
             <h2>Síndrome de Ehlers-Danlos Hipermóvil (SEDh)</h2>
             <p>El diagnóstico de SEDh no se basa únicamente en la hiperlaxitud. Incluye una combinación de factores clínicos, históricos y a veces genéticos.</p>
             <ul>
@@ -51,9 +45,9 @@
                 <li>Síntomas Asociados: Incluyen dolor crónico, luxaciones articulares frecuentes, piel suave y elástica, y problemas de cicatrización.</li>
                 <li>Evaluación Clínica: Un reumatólogo o genetista puede evaluar los síntomas y la historia clínica para hacer un diagnóstico.</li>
             </ul>
+            <img src="hiperlaxitud.jfif" alt="Imagen representativa del SEDh" class="large-image">
         </section>
-
-        <section id="test-sedh">
+        <section id="test-sedh" class="hidden">
             <h2>Test para Evaluar Posible Hiperlaxitud y SEDh</h2>
             <form id="sedhTestForm">
                 <label>
@@ -124,8 +118,7 @@
             </form>
             <div id="result"></div>
         </section>
-
-        <section id="enfermedades-comorbidas">
+        <section id="enfermedades-comorbidas" class="hidden">
             <h2>Enfermedades Comórbidas</h2>
             <ul>
                 <li>Síndrome de POTS (Taquicardia Ortostática Postural)</li>
@@ -134,10 +127,8 @@
                 <li>Dolor Crónico</li>
                 <li>Fatiga Crónica</li>
             </ul>
-            <img src="imagen-comorbidas.jpg" alt="Imagen representativa de enfermedades comórbidas" class="large-image">
         </section>
-
-        <section id="acciones">
+        <section id="acciones" class="hidden">
             <h2>¿Qué Hacer?</h2>
             <ul>
                 <li>Consultar a un médico especializado en genética o reumatología.</li>
@@ -146,37 +137,11 @@
             </ul>
         </section>
     </main>
-
+    
     <footer>
         <p>&copy; 2024 Beandreacc. Todos los derechos reservados.</p>
     </footer>
-
-    <<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Muestra solo la primera sección al cargar la página
-            const sections = document.querySelectorAll('main section');
-            sections.forEach((section, index) => {
-                section.style.display = index === 0 ? 'block' : 'none';
-            });
     
-            // Agrega interactividad a los enlaces del menú de navegación
-            document.querySelectorAll('nav ul li a').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-    
-                    // Oculta todas las secciones
-                    sections.forEach(section => {
-                        section.style.display = 'none';
-                    });
-    
-                    // Muestra la sección correspondiente al enlace clicado
-                    const target = document.querySelector(this.getAttribute('href'));
-                    target.style.display = 'block';
-                });
-            });
-        });
-    </script>
-    
-    
+    <script src="script.js"></script>
 </body>
 </html>
