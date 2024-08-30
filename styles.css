@@ -36,6 +36,7 @@ body::after {
                 radial-gradient(circle at 50% 50%, rgba(52, 116, 88, 0.3) 20px, transparent 40px);
     background-size: 200px 200px;
     animation: moveBubbles 20s infinite linear;
+    z-index: -1;
 }
 
 /* Animación de burbujas */
