@@ -2,12 +2,14 @@
     display: none;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #a09898;
     color: #363030; /* Color de texto gris oscuro */
+    cursor: url('cursor.png'), auto; /* Agregar cursor personalizado */
 }
 
 /* Burbujas de colores */
@@ -19,7 +21,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #595a66;
+    background: #ffffff;
     overflow: hidden;
 }
 
@@ -31,11 +33,12 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 10% 20%, rgba(238, 85, 24, 0.3) 20px, transparent 40px), 
-                radial-gradient(circle at 80% 80%, rgba(7, 46, 58, 0.3) 20px, transparent 40px), 
+    background: radial-gradient(circle at 10% 20%, rgba(57, 7, 240, 0.3) 20px, transparent 40px), 
+                radial-gradient(circle at 80% 80%, rgba(4, 82, 105, 0.3) 20px, transparent 40px), 
                 radial-gradient(circle at 50% 50%, rgba(52, 116, 88, 0.3) 20px, transparent 40px);
     background-size: 200px 200px;
     animation: moveBubbles 20s infinite linear;
+    z-index: -1;
 }
 
 /* Animación de burbujas */
@@ -52,7 +55,7 @@ body::after {
 header {
     background-color: #ffffff;
     color: #363030; /* Color de texto gris oscuro */
-    padding: 10px 0;
+    padding: 20px 0; /* Aumentar el padding */
     text-align: center;
 }
 
@@ -72,14 +75,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px; /* Aumentar el margen */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #363030; /* Color de texto gris oscuro */
     font-size: 1.2em;
-    padding: 10px 15px;
+    padding: 15px 20px; /* Aumentar el padding */
     display: block;
     transition: background-color 0.3s;
 }
@@ -90,12 +93,13 @@ nav ul li a:hover {
 
 /* Section Styles */
 main {
-    padding: 20px;
+    padding: 40px; /* Aumentar el padding */
 }
 
 section h2 {
-    font-size: 2em;
-    color: #aaafaf;
+    font-size: 2.5em; /* Aumentar el tamaño de la fuente */
+    color: #2a6143;
+    margin-bottom: 20px; /* Espacio debajo del título */
 }
 
 section ul {
@@ -104,22 +108,55 @@ section ul {
 }
 
 section ul li {
-    background: #cdd1d1;
-    margin: 5px 0;
-    padding: 10px;
+    background: #717474;
+    margin: 10px 0; /* Aumentar el margen */
+    padding: 15px; /* Aumentar el padding */
     border-radius: 5px;
 }
 
 .large-image {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 30px 0; /* Aumentar el margen */
+}
+/* Estilo para las preguntas del test */
+#sedhTestForm label {
+    display: block;
+    background-color: #edf1f1;
+    border: 2px solid #c4cccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#sedhTestForm select {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#sedhTestForm button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #9b96d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sedhTestForm button:hover {
+    background-color: #b4a1d8;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: rgb(134, 128, 128);
+    background-color: #cdbdd4;
+    color: rgb(32, 31, 31);
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0; /* Aumentar el padding */
 }
